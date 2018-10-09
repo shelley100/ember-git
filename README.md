@@ -54,3 +54,27 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+#Following are my steps
+
+##Add Bootstrap and Sass to Ember.js App
+
+Let’s add some basic styling to our application. We use Bootstrap with Sass. Ember CLI can install for us add-ons and useful packages. These add-ons simplify our development process, because we don’t have to reinvent the wheel, we get more out of the box. You can find various packages, add-ons on these websites: http://www.emberaddons.com or http://www.emberobserver.com
+
+We install an add-on for Sass and another for Bootstrap.
+
+
+Run the following two commands:
+
+* $ ember install ember-cli-sass
+* $ ember install ember-cli-bootstrap-sassy
+
+* You will see, that your ./package.json is extended with a couple of lines.
+
+* Rename your app.css to app.scss with the following terminal command or you can use your editor to rename the ./app/styles/app.css file:
+
+* $ mv app/styles/app.css app/styles/app.scss
+
+Open ./app/styles/app.scss file in your editor and add the following line:
+
+* @import "bootstrap";
