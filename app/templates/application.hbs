@@ -1,4 +1,18 @@
+<nav class="navbar navbar-inverse">
 
+    <div class="container-fluid">
 
+      <!-- Links -->
+      <ul class="nav navbar-nav">
+          {{#each model as |root|}}
+              <li class="nav-item">
+                {{#link-to root.root}}
+                    {{root.name}}
+                {{/link-to}}
+              </li>
+          {{/each}}
+      </ul>
+    </div>
+</nav>
 
 {{outlet}}
