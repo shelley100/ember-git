@@ -1,0 +1,22 @@
+{{yield}}
+{{#if isCurrent}}
+
+      <li class="nav-item">
+
+
+        <p class="nav-link" style="color:white">
+            <em>{{title}}</em>
+        </p>
+
+
+      </li>
+
+  {{else}}
+    <li class="nav-item">
+      {{#link-to route class="nav-link" }}
+
+          <em>{{title}}</em>
+
+      {{/link-to}}
+    </li>
+{{/if}}
